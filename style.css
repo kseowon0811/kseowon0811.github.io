@@ -1,0 +1,158 @@
+/* 전체 화면 */
+
+body {
+  margin: 0;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  overflow: hidden;
+
+  color: white;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* 배경 어둡게 */
+
+body::before {
+  content: "";
+
+  position: fixed;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.35);
+
+  z-index: -1;
+}
+
+/* 시계 */
+
+#clock {
+  margin: 0;
+
+  font-size: 120px;
+  font-weight: 700;
+
+  color: white;
+
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+/* 인사말 */
+
+#greeting {
+  margin: 0 0 40px 0;
+
+  font-size: 45px;
+  font-weight: 500;
+
+  color: white;
+
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+}
+
+/* 로그인 입력 */
+
+#login-form input {
+  width: 500px;
+
+  padding: 10px 0;
+
+  background: transparent;
+
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 0;
+
+  color: white;
+
+  font-size: 28px;
+  text-align: center;
+
+  outline: none;
+}
+
+/* 로그인 버튼 숨김 */
+
+#login-form button {
+  display: none;
+}
+
+/* 투두 입력 */
+
+#todo-form input {
+  width: 500px;
+
+  padding: 10px 0;
+
+  background: transparent;
+
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 0;
+
+  color: white;
+
+  font-size: 24px;
+  text-align: center;
+
+  outline: none;
+}
+
+/* placeholder */
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* 투두 리스트 */
+
+#todo-list {
+  list-style: none;
+
+  margin-top: 20px;
+  padding: 0;
+
+  text-align: center;
+  font-size: 22px;
+}
+
+#todo-list li {
+  margin: 8px 0;
+
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+/* 날씨 */
+#weather {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 20px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+#weather-icon {
+  font-size: 30px;
+}
+
+#weather-temp {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#weather-city {
+  font-size: 16px;
+}
