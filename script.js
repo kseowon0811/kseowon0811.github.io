@@ -1,5 +1,3 @@
-function onGeoOk(position) {
-  console.log("위치 성공");}
 
 
 const clock = document.querySelector("#clock");
