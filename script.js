@@ -108,7 +108,7 @@ function changeBackground() {
     images[Math.floor(Math.random() * images.length)];
 
   document.body.style.backgroundImage =
-    `url(img/${chosenImage})`;
+    `url(${chosenImage})`;
 
   console.log("배경 변경:", chosenImage);
 }
